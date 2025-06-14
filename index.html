@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Angebote</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 2rem;
+        }
+        .server-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .server-card {
+            background: linear-gradient(to right, #801e90, #3f2b96);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .server-card h2 {
+            margin-top: 0;
+        }
+        .price {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unsere Server Angebote</h1>
+    <div class="server-list">
+        <div class="server-card">
+            <div class="price">11,95 €</div>
+            <h2>Big</h2>
+            <ul>
+                <li><strong>6 Kerne</strong> (GOLD 6154/6240)</li>
+                <li><strong>24 GB</strong> DDR4 ECC RAM</li>
+                <li><strong>250 GB</strong> NVMe SSD</li>
+                <li>Backups inklusive</li>
+                <li><strong>1x IPv4</strong> Adresse</li>
+                <li><strong>2× 1 Gbit/s</strong> LACP (shared)</li>
+                <li>Premium DDoS Schutz</li>
+                <li><strong>25 TB</strong> Traffic inklusive</li>
+            </ul>
+        </div>
+
+        <div class="server-card">
+            <div class="price">19,95 €</div>
+            <h2>Pro</h2>
+            <ul>
+                <li><strong>8 Kerne</strong> (GOLD 6258R)</li>
+                <li><strong>32 GB</strong> DDR4 ECC RAM</li>
+                <li><strong>500 GB</strong> NVMe SSD</li>
+                <li>Backups inklusive</li>
+                <li><strong>1x IPv4</strong> Adresse</li>
+                <li><strong>2× 2,5 Gbit/s</strong> LACP (shared)</li>
+                <li>Premium DDoS Schutz</li>
+                <li><strong>40 TB</strong> Traffic inklusive</li>
+                
+            </ul>
+        </div>
+
+        <div class="server-card">
+            <div class="price">29,95 €</div>
+            <h2>Ultra</h2>
+            <ul>
+                <li><strong>12 Kerne</strong> (AMD EPYC 7502P)</li>
+                <li><strong>64 GB</strong> DDR4 ECC RAM</li>
+                <li><strong>1 TB</strong> NVMe SSD</li>
+                <li>Backups inklusive</li>
+                <li><strong>1x IPv4</strong> Adresse</li>
+                <li><strong>2× 10 Gbit/s</strong> LACP (dediziert)</li>
+                <li>Premium DDoS Schutz</li>
+                <li><strong>Unbegrenzter Traffic</strong></li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
